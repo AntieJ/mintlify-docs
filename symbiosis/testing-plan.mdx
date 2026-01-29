@@ -6,8 +6,7 @@ icon: "list-check"
 
 # Testing Plan - Symbiosis - 27th Feb
 
-> **Last Updated:** January 2026
-> **Reviewer:** Anton
+> **Last Updated:** January 2026 **Reviewer:** Anton.
 
 ---
 
@@ -18,10 +17,11 @@ This testing plan provides a structured approach for validating key platform fea
 ### Testing Plan
 
 1. Work through each scenario in order within each section
-2. Use the following document to report any issues or add feedback: *Abatable to share spreadsheet*
+2. Use the following document to report any issues or add feedback: _Abatable to share spreadsheet_
 3. Abatable will review and respond to each issue
 
 When reporting issues, include:
+
 - Scenario name and step number
 - Expected behaviour vs actual behaviour
 - Screenshots (if applicable)
@@ -33,93 +33,95 @@ When reporting issues, include:
 
 ### Supplier Journey
 
-| # | Scenario | Description |
-|---|----------|-------------|
-| 1 | [Responding to Pre-Screening (Pass)](#1-responding-to-pre-screening-pass) | Complete questionnaire and advance |
-| 2 | [Responding to Pre-Screening (Fail)](#2-responding-to-pre-screening-fail) | Rejection flow and appeal availability |
-| 3 | [Responding to Pre-Screening (Geo visualisation)](#3-responding-to-pre-screening-geo-visualisation) | KML upload and map verification |
-| 4 | [Responding to Screening Stage](#4-responding-to-screening-stage) | Full questionnaire and document upload |
+| # | Scenario                                                                                            | Description                            |
+| --- | --------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| 1 | [Responding to Pre-Screening (Pass)](#1-responding-to-pre-screening-pass)                           | Complete questionnaire and advance     |
+| 2 | [Responding to Pre-Screening (Fail)](#2-responding-to-pre-screening-fail)                           | Rejection flow and appeal availability |
+| 3 | [Responding to Pre-Screening (Geo visualisation)](#3-responding-to-pre-screening-geo-visualisation) | KML upload and map verification        |
+| 4 | [Responding to Screening Stage](#4-responding-to-screening-stage)                                   | Full questionnaire and document upload |
 
 ### Symbiosis Staff
 
-| # | Scenario | Description |
-|---|----------|-------------|
-| 1 | [Viewing the Procurement](#1-viewing-the-procurement) | Dashboard, pipeline, and exports |
-| 2 | [Viewing a Proposal](#2-viewing-a-proposal) | Search, filter, translations |
-| 3 | [Making a Note](#3-making-a-note) | Notes and audit history |
-| 4 | [Approving/Rejecting a Proposal](#4-approvingrejecting-a-proposal) | Stage decisions and portfolio |
+| # | Scenario                                                                | Description                       |
+| --- | ----------------------------------------------------------------------- | --------------------------------- |
+| 1 | [Viewing the Procurement](#1-viewing-the-procurement)                   | Dashboard, pipeline, and exports  |
+| 2 | [Viewing a Proposal](#2-viewing-a-proposal)                             | Search, filter, translations      |
+| 3 | [Making a Note](#3-making-a-note)                                       | Notes and audit history           |
+| 4 | [Approving/Rejecting a Proposal](#4-approvingrejecting-a-proposal)      | Stage decisions and portfolio     |
 | 5 | [Viewing and Overriding Scorecard](#5-viewing-and-overriding-scorecard) | Scores, geospatial, and overrides |
 
 ---
 
 ## Feature rollout
 
-| Ready for testing - 27th Feb | Ready for RFP Launch - 26th March | After RFP Launch - TBD |
-|-------------------|----------------------|------------------|
-| Supplier: Stage 1: Pre-screening Questionnaire | Supplier Requests | Stage: Member Opt-in Workflow |
-| Supplier: Stage 2: Screening Questionnaire | Appeals process | Stage: Third party DD |
-| Viewing Submissions | Multilingual| |
-| Managing Submissions | Supplier Access & Onboarding | |
-| Scorecard | Google Drive Sync | |
-| Making Notes |  | |
-| Running Geospatial analysis |  | |
-
+| Ready for testing - 27th Feb                   | Ready for RFP Launch - 26th March | After RFP Launch - TBD        |
+| ---------------------------------------------- | --------------------------------- | ----------------------------- |
+| Supplier: Stage 1: Pre-screening Questionnaire | Supplier Requests                 | Stage: Member Opt-in Workflow |
+| Supplier: Stage 2: Screening Questionnaire     | Appeals process                   | Stage: Third party DD         |
+| Viewing Submissions                            | Multilingual                      |                               |
+| Managing Submissions                           | Supplier Access & Onboarding      |                               |
+| Scorecard                                      | Google Drive Sync                 |                               |
+| Making Notes                                   |                                   |                               |
+| Running Geospatial analysis                    |                                   |                               |
 
 ---
+
 ## Platform Access
 
 Access the platform at: `https://app.abatable.com/`
 
 ---
+
 # Scenario steps
+
 ## Supplier Journey
 
 ### 1. Responding to Stage 1: Pre-Screening (Pass)
 
-| Action | Expected Outcome |
-|--------|------------------|
-| Navigate to active RFP | Pre-screening questionnaire displays |
-| Complete all required fields with valid data | Form accepts input |
-| Submit pre-screening responses | Submission confirmed |
-| Verify status update | Status shows "Passed" or advances to next stage |
+| Action                                       | Expected Outcome                                |
+| -------------------------------------------- | ----------------------------------------------- |
+| Navigate to active RFP                       | Pre-screening questionnaire displays            |
+| Complete all required fields with valid data | Form accepts input                              |
+| Submit pre-screening responses               | Submission confirmed                            |
+| Verify status update                         | Status shows "Passed" or advances to next stage |
 
 ---
 
 ### 2. Responding to Stage 1: Pre-Screening (Fail)
 
-| Action | Expected Outcome |
-|--------|------------------|
-| Navigate to active RFP | Pre-screening questionnaire displays |
-| Enter data that triggers rejection criteria | Form accepts input |
-| Submit pre-screening responses | Submission confirmed |
-| Verify rejection notification | Status shows "Rejected" with reason displayed |
-| Confirm appeal option is visible | Appeal button or link available |
+| Action                                      | Expected Outcome                              |
+| ------------------------------------------- | --------------------------------------------- |
+| Navigate to active RFP                      | Pre-screening questionnaire displays          |
+| Enter data that triggers rejection criteria | Form accepts input                            |
+| Submit pre-screening responses              | Submission confirmed                          |
+| Verify rejection notification               | Status shows "Rejected" with reason displayed |
+| Confirm appeal option is visible            | Appeal button or link available               |
 
 ---
 
 ### 3. Responding to Pre-Screening (Geo visualisation)
 
-| Action | Expected Outcome |
-|--------|------------------|
-| Navigate to active RFP | Pre-screening questionnaire displays |
-| Complete details and navigate to geospatial question section | KML upload field visible |
-| Upload KML file with project boundaries | File uploads successfully |
-| Verify map preview displays | Project boundaries render on map |
-| Check layer information | Geospatial layers visible |
-| Submit pre-screening responses | Submission confirmed with geo data |
+| Action                                                       | Expected Outcome                     |
+| ------------------------------------------------------------ | ------------------------------------ |
+| Navigate to active RFP                                       | Pre-screening questionnaire displays |
+| Complete details and navigate to geospatial question section | KML upload field visible             |
+| Upload KML file with project boundaries                      | File uploads successfully            |
+| Verify map preview displays                                  | Project boundaries render on map     |
+| Check layer information                                      | Geospatial layers visible            |
+| Submit pre-screening responses                               | Submission confirmed with geo data   |
 
 ---
 
 ### 4. Responding to Screening Stage
 
-| Action | Expected Outcome |
-|--------|------------------|
-| Access screening questionnaire | Full questionnaire displays |
-| Verify questions display in selected language | All question text translated |
-| Complete all required sections | Progress indicator updates |
-| Upload required documents | Files upload successfully |
-| Save draft progress | Draft saved without errors |
-| Submit final screening response | Confirmation message displayed |
+| Action                                        | Expected Outcome               |
+| --------------------------------------------- | ------------------------------ |
+| Access screening questionnaire                | Full questionnaire displays    |
+| Verify questions display in selected language | All question text translated   |
+| Complete all required sections                | Progress indicator updates     |
+| Upload required documents                     | Files upload successfully      |
+| Save draft progress                           | Draft saved without errors     |
+| Submit final screening response               | Confirmation message displayed |
 
 ---
 
@@ -127,14 +129,14 @@ Access the platform at: `https://app.abatable.com/`
 
 ### 1. Viewing the Procurement submissions
 
-| Action | Expected Outcome |
-|--------|------------------|
-| Log in as Symbiosis staff | Dashboard displays |
-| Navigate to **Procurements** | Procurement list visible |
-| Select the Symbiosis RFP | Procurement summary displays |
-| Review pipeline overview | Stage counts and status visible |
-| Check filter options | Filters work as expected |
-| Export pipeline data to CSV | CSV file downloads successfully |
+| Action                       | Expected Outcome                |
+| ---------------------------- | ------------------------------- |
+| Log in as Symbiosis staff    | Dashboard displays              |
+| Navigate to **Procurements** | Procurement list visible        |
+| Select the Symbiosis RFP     | Procurement summary displays    |
+| Review pipeline overview     | Stage counts and status visible |
+| Check filter options         | Filters work as expected        |
+| Export pipeline data to CSV  | CSV file downloads successfully |
 
 **Related Guide:** [Viewing Submissions](/symbiosis/viewing-submissions)
 
@@ -142,13 +144,13 @@ Access the platform at: `https://app.abatable.com/`
 
 ### 2. Viewing a Proposal
 
-| Action | Expected Outcome |
-|--------|------------------|
-| Navigate to **Proposals** | Proposal list displays |
-| Use search or filter to find proposal | Results update correctly |
-| Click to open proposal | Proposal detail page loads |
-| Review submission content | All sections accessible |
-| View uploaded documents | Documents downloadable |
+| Action                                       | Expected Outcome            |
+| -------------------------------------------- | --------------------------- |
+| Navigate to **Proposals**                    | Proposal list displays      |
+| Use search or filter to find proposal        | Results update correctly    |
+| Click to open proposal                       | Proposal detail page loads  |
+| Review submission content                    | All sections accessible     |
+| View uploaded documents                      | Documents downloadable      |
 | Toggle translation view for supplier answers | Translated content displays |
 
 **Related Guide:** [Viewing Submissions](/symbiosis/viewing-submissions)
@@ -157,15 +159,15 @@ Access the platform at: `https://app.abatable.com/`
 
 ### 3. Making a Note
 
-| Action | Expected Outcome |
-|--------|------------------|
-| Open a proposal | Proposal detail page displays |
-| Navigate to notes section | Notes area visible |
-| Click **'Add Note'** | Note input field appears |
-| Enter note content | Text accepted |
-| Save note | Note saved and displays with timestamp |
-| Verify note persists | Note visible on page refresh |
-| Check audit history | Note creation logged with timestamp |
+| Action                    | Expected Outcome                       |
+| ------------------------- | -------------------------------------- |
+| Open a proposal           | Proposal detail page displays          |
+| Navigate to notes section | Notes area visible                     |
+| Click **'Add Note'**      | Note input field appears               |
+| Enter note content        | Text accepted                          |
+| Save note                 | Note saved and displays with timestamp |
+| Verify note persists      | Note visible on page refresh           |
+| Check audit history       | Note creation logged with timestamp    |
 
 **Related Guide:** [Communicating with Suppliers](/symbiosis/communicating-suppliers)
 
@@ -173,13 +175,13 @@ Access the platform at: `https://app.abatable.com/`
 
 ### 4. Approving/Rejecting a Proposal
 
-| Action | Expected Outcome |
-|--------|------------------|
-| Open proposal requiring decision | Proposal detail displays |
-| Review scorecard and submission | All information accessible |
-| Click **'Approve'** or **'Reject'** | Decision dialog appears |
-| Confirm decision | Stage progression updates |
-| Verify proposal status change | New status reflected in list |
+| Action                              | Expected Outcome              |
+| ----------------------------------- | ----------------------------- |
+| Open proposal requiring decision    | Proposal detail displays      |
+| Review scorecard and submission     | All information accessible    |
+| Click **'Approve'** or **'Reject'** | Decision dialog appears       |
+| Confirm decision                    | Stage progression updates     |
+| Verify proposal status change       | New status reflected in list  |
 | Move approved proposal to portfolio | Proposal appears in portfolio |
 
 **Related Guide:** [Symbiosis RFP Stages](/symbiosis/rfp-stages)
@@ -188,17 +190,18 @@ Access the platform at: `https://app.abatable.com/`
 
 ### 5. Viewing and Overriding Scorecard
 
-| Action | Expected Outcome |
-|--------|------------------|
-| Open proposal with scorecard | Scorecard section visible |
-| Review automated scores | All four categories display |
-| View geospatial scorecard metrics | Geospatial scores display |
-| Check scorecard flags | Risk flags visible where applicable |
-| Navigate to override function | Override option accessible |
-| Enter manual override score | New score accepted |
-| Add override justification | Justification saved |
-| Save override | Override reflected in scorecard |
-| Verify audit trail | Override logged with user and timestamp |
+| Action                            | Expected Outcome                        |
+| --------------------------------- | --------------------------------------- |
+| Open proposal with scorecard      | Scorecard section visible               |
+| Review automated scores           | All four categories display             |
+| View geospatial scorecard metrics | Geospatial scores display               |
+| Check scorecard flags             | Risk flags visible where applicable     |
+| Navigate to override function     | Override option accessible              |
+| Enter manual override score       | New score accepted                      |
+| Add override justification        | Justification saved                     |
+| Save override                     | Override reflected in scorecard         |
+| Verify audit trail                | Override logged with user and timestamp |
 
 **Related Guides:**
+
 - [Scorecard](/symbiosis/scorecard)
