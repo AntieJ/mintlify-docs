@@ -1,0 +1,438 @@
+---
+title: "Managing Submissions"
+description: "How to make stage decisions for proposals, including advancing and rejecting"
+icon: "tasks"
+---
+
+# Managing Submissions
+
+> **Last Updated:** January 2026
+>
+> **Audience:** Symbiosis Staff
+>
+> **Reviewer:**
+
+---
+
+## Overview
+
+This guide covers how to make stage decisions for proposals, including advancing proposals to the next stage and rejecting proposals.
+
+---
+
+## Table of Contents
+
+1. [Understanding Stages](#understanding-stages)
+2. [Advancing Proposals](#advancing-proposals)
+3. [Rejecting Proposals](#rejecting-proposals)
+4. [Bulk Actions](#bulk-actions)
+5. [Shortlists & Notes](#shortlists--notes)
+
+---
+
+## Understanding Stages
+
+### Symbiosis Stage Workflow
+
+| Stage | Name | Advancement | Notes |
+|-------|------|-------------|-------|
+| 1 | Eligibility Check | Auto on submit | Pass/fail based on criteria |
+| 2 | Screening Phase 1 | Manual | Scorecard review + manual tasks |
+| 3 | Screening Phase 2 | Manual | External geospatial analysis |
+| 4 | Intermediate DD | Manual | External vendor review |
+| 5 | Member Opt-in | Manual | Coalition members select |
+| 6 | Full DD | Manual | Final comprehensive review |
+
+### Stage Indicators
+
+Each proposal displays:
+- **Current Stage** - Where the proposal currently sits
+- **Completed Stages** - Visual indicator of stages passed
+- **Stage History** - Timeline of all stage transitions
+
+### Stage Status Types
+
+| Status | Description |
+|--------|-------------|
+| **Pending** | Awaiting supplier submission |
+| **Submitted** | Supplier has submitted for this stage |
+| **Under Review** | Being evaluated |
+| **Passed** | Approved to progress |
+| **Failed** | Rejected at this stage |
+| **Appeal Pending** | Supplier has appealed rejection |
+
+---
+
+## Advancing Proposals
+
+### Manual Advancement
+
+1. Open the proposal detail page
+2. Review all submitted information
+3. Verify scorecard scores
+4. Click **'Advance to Next Stage'**
+5. Confirm the action
+
+### Advancement Prerequisites
+
+Before advancing, ensure:
+- All stage questions have been answered
+- Scorecard review is complete
+- Manual tasks are completed (if applicable)
+- No blocking issues identified
+
+### Automatic Advancement
+
+For stages configured with "Auto on Submit":
+- Proposal automatically advances when supplier submits
+- Rule-based criteria are evaluated
+- Notifications sent to relevant parties
+
+### Stage Transition Logging
+
+All stage transitions are logged with:
+- Timestamp
+- User who performed the action
+- Previous stage
+- New stage
+- Any notes or reasons provided
+
+---
+
+## Rejecting Proposals
+
+### Rejection Process
+
+1. Open the proposal detail page
+2. Click **'Reject Proposal'**
+3. Complete mandatory rejection fields:
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| **Reason Category** | Yes | Select from dropdown |
+| **Detailed Explanation** | Yes | Text explanation of rejection |
+| **Supporting Evidence** | No | Optional file upload |
+
+4. Review and confirm rejection
+
+### Rejection at Different Stages
+
+| Stage | Rejection Implications |
+|-------|----------------------|
+| Eligibility Check | Automatic based on criteria; appeal available |
+| Screening Phases | Manual rejection with reason required |
+| DD Stages | Manual rejection with detailed feedback |
+
+### Communicating Rejections
+
+Suppliers receive notification of rejection:
+- Rejection reason (category)
+- Feedback if provided
+- Appeal option (if available)
+
+### Good Rejection Feedback
+
+**Include:**
+- Specific criteria that weren't met
+- Reference to scorecard scores
+- Actionable information for future
+
+**Example:**
+> "Proposal rejected due to scorecard scores below threshold in Delivery Risk (1.8/5) and Methodology Eligibility (2.1/5). The project's methodology version (v2.0) is not currently approved. Developer track record could not be verified."
+
+---
+
+## Bulk Actions
+
+### Selecting Multiple Proposals
+
+1. Use checkboxes in proposals table
+2. Or use "Select All" for current view
+3. Bulk action menu becomes available
+
+### Available Bulk Actions
+
+| Action | Description |
+|--------|-------------|
+| **Advance Stage** | Move all selected to next stage |
+| **Change Status** | Update status for all selected |
+| **Add to Shortlist** | Add all to a shortlist |
+| **Export** | Export selected proposals |
+
+### Bulk Advancement Considerations
+
+- All selected proposals must be at the same stage
+- All prerequisites must be met for each proposal
+- Individual failures don't block others
+- Summary of results shown after completion
+
+---
+
+## Stage Transition Rules
+
+### Backward Movement
+
+In some cases, proposals may need to move backward:
+
+| Scenario | Action |
+|----------|--------|
+| **Appeal Overturned** | Returns to previous stage |
+| **New Information Received** | May require re-evaluation |
+| **Error Correction** | Admin can move backward |
+
+### Movement Restrictions
+
+| User Type | Can Advance | Can Reject | Can Move Backward |
+|-----------|-------------|------------|-------------------|
+| Abatable Admin | Yes | Yes | Yes |
+| Symbiosis Staff | Yes | Yes | No (request admin) |
+| Symbiosis Members | No | No | No |
+| DD Vendors | No | No | No |
+
+---
+
+## Notifications
+
+### Stage Change Notifications
+
+| Event | Who's Notified |
+|-------|----------------|
+| Proposal Submitted | Buyer team |
+| Stage Advanced | Supplier |
+| Proposal Rejected | Supplier |
+
+### Notification Channels
+
+- In-platform notifications
+- Email notifications (configurable)
+
+---
+
+## Best Practices
+
+### Review Efficiency
+- Complete scorecard review before stage decision
+- Use checklists for manual task completion
+- Document reasoning in notes before advancing
+
+### Rejection Quality
+- Provide clear, actionable feedback
+- Use consistent reason categories
+- Include specific examples where possible
+
+---
+
+## Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Cannot advance proposal | Check all prerequisites are met |
+| Rejection not saving | Ensure all required fields completed |
+| Bulk action failed for some | Check individual proposals for issues |
+
+---
+
+## Shortlists & Notes
+
+This section covers how to create custom views (shortlists) and add notes to proposals for collaboration and organisation.
+
+---
+
+### Shortlist Management
+
+#### What Are Shortlists?
+
+Shortlists are custom saved views of the proposals table. They allow you to:
+- Create personal working lists
+- Group proposals for discussion
+- Track specific project sets
+- Quickly access frequently reviewed proposals
+
+#### Creating a Shortlist
+
+1. Navigate to the proposals table
+2. Click **'Create Shortlist'** or the **'+'** icon
+3. Enter a **shortlist name**
+4. Click **'Create'**
+
+#### Adding Proposals to Shortlists
+
+**From Proposals Table**
+1. Select proposals using checkboxes
+2. Click **'Add to Shortlist'** in bulk actions
+3. Choose the target shortlist
+
+**From Proposal Detail**
+1. Open a proposal
+2. Click **'Add to Shortlist'**
+3. Choose the target shortlist
+
+#### Managing Shortlists
+
+| Action | How To |
+|--------|--------|
+| **View shortlist** | Click shortlist name in sidebar |
+| **Rename** | Click settings icon -> Rename |
+| **Delete** | Click settings icon -> Delete |
+| **Pin for quick access** | Click pin icon |
+| **Export** | Click export icon -> Choose format |
+
+#### Shortlist Properties
+
+| Property | Description |
+|----------|-------------|
+| **Name** | Custom name for the shortlist |
+| **Owner** | User who created it |
+| **Proposal Count** | Number of proposals in the list |
+| **Created Date** | When the shortlist was created |
+| **Pinned Status** | Whether it's pinned for quick access |
+
+#### Multi-List Membership
+
+A single proposal can appear in multiple shortlists:
+- Personal shortlist for your review
+- Team shortlist for discussion
+- Stage-specific shortlist for tracking
+
+#### Exporting Shortlists
+
+Export options:
+- **CSV** - Data in spreadsheet format
+- **PDF** - Formatted document for offline review
+
+---
+
+### Proposal Notes
+
+#### What Are Notes?
+
+Notes are internal comments attached to proposals. They allow:
+- Recording evaluation thoughts
+- Sharing information across teams
+- Tracking discussion points
+- Documenting decisions
+
+#### Adding a Note
+
+1. Open the proposal detail page
+2. Navigate to the **Notes** section
+3. Click **'Add Note'**
+4. Enter your note content
+5. Click **'Save'**
+
+#### Note Features
+
+| Feature | Description |
+|---------|-------------|
+| **Rich Text** | Formatting, bullet points, links |
+| **Timestamp** | Auto-captured when saved |
+| **Author** | Auto-captured from logged-in user |
+| **Delete** | Delete own notes (soft delete) |
+
+#### Note Formatting
+
+The rich text editor supports:
+- **Bold**, *italic*, ~~strikethrough~~
+- Bullet and numbered lists
+- Links
+- Basic formatting
+
+#### Viewing Notes
+
+Notes appear in:
+- **Proposal detail page** - Full notes section
+- **Proposals table** - Latest note column
+- **Shortlist view** - Quick note indicator
+
+#### Note Visibility
+
+All notes are visible to:
+- Abatable Admin
+- Symbiosis Staff
+- Symbiosis Members (view only)
+
+Notes are **not visible** to:
+- DD Vendors (unless specifically shared)
+- Suppliers
+
+#### Deleting Notes
+
+- You can delete your own notes
+- Soft delete maintains changelog trail
+- Admins can restore deleted notes if needed
+
+---
+
+### Collaboration Workflows
+
+#### Team Review Workflow
+
+1. **Create a review shortlist** for a batch of proposals
+2. **Team members review** proposals independently
+3. **Add notes** with findings and recommendations
+4. **Discuss** in team meeting using shortlist as agenda
+5. **Make stage decisions** based on collective review
+
+#### Individual Review Workflow
+
+1. **Create personal shortlist** for proposals to review
+2. **Work through the list** systematically
+3. **Add notes** as you review
+4. **Remove from list** when review complete
+
+#### DD Coordination Workflow
+
+1. **Create shortlist** of proposals for DD vendor
+2. **Share access** to specific projects (via permissions)
+3. **Track progress** using shortlist
+4. **Add notes** for coordination
+
+#### Using Notes Effectively
+
+| Note Type | Example Content |
+|-----------|-----------------|
+| **Initial Review** | "Good project fundamentals, scorecard shows strong methodology compliance" |
+| **Question** | "Need clarification on KML boundary overlap with protected area" |
+| **Decision** | "Recommend advancing to DD based on Phase 1 scores" |
+| **Follow-up** | "Requested additional PDD documentation on 15 Jan" |
+
+---
+
+### Shortlist & Notes Best Practices
+
+#### Shortlist Naming
+- Use descriptive names: "Q1 High Priority", "DD Batch 3"
+- Include date or round number if relevant
+- Avoid generic names like "My List"
+
+#### Note Quality
+- Be specific and actionable
+- Include dates when referencing events
+- Reference specific scorecard categories or data points
+- Keep notes professional (they're visible to the team)
+
+#### Organisation
+- Pin frequently used shortlists
+- Archive completed shortlists
+- Review and clean up old shortlists periodically
+
+---
+
+### Shortlist & Notes Permissions
+
+| Feature | Abatable Admin | Symbiosis Staff | Symbiosis Members | DD Vendors |
+|---------|---------------|-----------------|-------------------|------------|
+| Create shortlists | Yes | Yes | Yes | No |
+| View all shortlists | Yes | Yes | No (own only) | No |
+| Add notes | Yes | Yes | No | No |
+| View notes | Yes | Yes | Yes | No |
+| Delete own notes | Yes | Yes | N/A | N/A |
+
+---
+
+## Related Guides
+
+- [Viewing Submissions](/symbiosis/viewing-submissions) - Viewing and filtering proposals
+- [Symbiosis RFP Stages](/symbiosis/rfp-stages) - Stage 1 & 2 decisions
+- [Scorecard](/symbiosis/scorecard) - Scores for stage decisions
+- [Managing Appeals](/symbiosis/managing-appeals) - Handling supplier appeals

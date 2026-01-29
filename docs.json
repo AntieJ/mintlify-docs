@@ -66,6 +66,24 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Symbiosis",
+        "groups": [
+          {
+            "group": "Symbiosis RFP",
+            "pages": [
+              "symbiosis/testing-plan",
+              "symbiosis/viewing-submissions",
+              "symbiosis/managing-submissions",
+              "symbiosis/rfp-stages",
+              "symbiosis/geospatial",
+              "symbiosis/scorecard",
+              "symbiosis/communicating-suppliers",
+              "symbiosis/managing-appeals"
+            ]
+          }
+        ]
       }
     ],
     "global": {

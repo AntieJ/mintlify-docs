@@ -1,0 +1,485 @@
+---
+title: "Scorecard"
+description: "Understanding and overriding scorecard scores for project evaluation"
+icon: "gauge"
+---
+
+# Scorecard
+
+> **Last Updated:** January 2026
+>
+> **Audience:** Symbiosis Staff
+>
+> **Reviewer:**
+
+---
+
+## Understanding Scores
+
+This section explains how to interpret scorecard scores and understand what they mean for project evaluation.
+
+---
+
+### Scorecard Structure
+
+#### Four Categories
+
+Each proposal is scored across four main categories:
+
+| Category | What It Measures |
+|----------|------------------|
+| **Delivery Risk** | Likelihood project will deliver credits |
+| **Methodology Eligibility** | Compliance with methodology requirements |
+| **Project Quality** | Technical quality and impact |
+| **Commercial** | Pricing and commercial viability |
+
+#### Score Scale
+
+Categories are scored 0-5:
+
+| Score | Rating | Meaning |
+|-------|--------|---------|
+| 4.5 - 5.0 | Excellent | Exceeds expectations |
+| 3.5 - 4.4 | Good | Meets expectations well |
+| 2.5 - 3.4 | Acceptable | Meets minimum |
+| 1.5 - 2.4 | Marginal | Below requirements |
+| 0.0 - 1.4 | Poor | Does not meet requirements |
+
+#### Four-Tier Hierarchy
+
+Scores are structured hierarchically:
+
+```
+Scorecard Category (0-5)
+    +-- Group (0-100)
+        +-- Feature (0-100)
+            +-- Sub-feature (0-100)
+```
+
+---
+
+### Viewing Scores
+
+#### In Proposals Table
+
+The table shows category scores at a glance:
+- Four columns for category scores
+- Color-coded for quick assessment
+- Override indicator (icon) if manually adjusted
+
+#### In Proposal Detail
+
+Click into a proposal to see:
+1. **Summary scores** - Category scores
+2. **Detailed breakdown** - Expand each category
+3. **Feature scores** - Individual measurements
+4. **Source data** - What drove the score
+
+#### Expanding Categories
+
+Click a category to see:
+```
+Delivery Risk (3.8/5)
++-- Developer Capability (78/100)
+|   +-- Track Record (85/100)
+|   +-- Team Experience (71/100)
++-- Project Risk (72/100)
+    +-- Technical Risk (70/100)
+    +-- Execution Risk (74/100)
+```
+
+---
+
+### Category Deep Dive
+
+#### Delivery Risk
+
+**What it measures:** Will this project actually deliver credits?
+
+| Factor | Considerations |
+|--------|---------------|
+| Developer track record | Previous project delivery |
+| Team experience | Technical and management capability |
+| Project stage | How developed is the project |
+| Technical risk | Implementation challenges |
+| Execution risk | Timeline and resource factors |
+
+**Key features include:**
+- **Developer Score** - Overall developer assessment
+- **Inventory Sold** - Track record of credit delivery
+- **Years Experience** - Developer experience in VCM
+- **Projects Experience** - Number of portfolio projects
+- **Country/Project-type Experience** - Relevant regional/sector experience
+
+**Low score indicates:** High risk of non-delivery
+
+#### Methodology Eligibility
+
+**What it measures:** Does the project comply with methodology requirements?
+
+| Factor | Considerations |
+|--------|---------------|
+| Methodology approval | Using approved methodology (VM0047, Isometric, Equitable Earth) |
+| Documentation | Required documents present |
+| Requirements alignment | Meets methodology criteria |
+| Registration status | Registry status |
+
+**Key features include:**
+- **Methodology Score** - Overall methodology assessment
+- **High Integrity Alignment (CCP)** - Alignment with Core Carbon Principles
+- **Methodology Status** - Active, in transition, not active
+- **Methodology Deployment** - Market adoption
+- **Version Recency** - Current methodology version
+
+**Low score indicates:** Methodology compliance issues
+
+#### Project Quality
+
+**What it measures:** How good is the project technically?
+
+This category heavily relies on geospatial analysis:
+
+| Factor | Key Features |
+|--------|--------------|
+| **Land Suitability** | Suitable land cover %, Protected area overlap |
+| **Forest/Deforestation** | Forest stability %, Avg annual deforestation rate |
+| **Climate Risk** | Burned area %, Drought frequency (SPEI), Fire risk |
+| **ARR-Specific** | Median climate impact, High PNR coverage, Avg PNR |
+| **Terrain** | Average slope, Average terrain roughness |
+| **Biodiversity** | Biome diversity, Biodiversity intactness |
+| **Cost-Effectiveness** | Cost per hectare, Opportunity cost |
+
+**Low score indicates:** Quality concerns
+
+#### Commercial
+
+**What it measures:** Is the pricing and commercial offering acceptable?
+
+| Factor | Considerations |
+|--------|---------------|
+| Price per tonne | vs budget/market (threshold: &lt; USD 100/tonne) |
+| Volume offered | Meets requirements |
+| Terms | Payment and delivery terms |
+| Value alignment | Price-quality relationship |
+
+**Low score indicates:** Commercial concerns (price too high, terms unfavorable)
+
+#### Red Flags (Informational)
+
+Additionally, scores may be flagged if:
+- **Negative media** reported on the project
+- **Geospatial red flag** detected
+- Credit ratings below threshold
+- Host country sanctioned (OFAC)
+
+---
+
+### Score Sources
+
+#### Where Scores Come From
+
+| Source | Description |
+|--------|-------------|
+| **Questionnaire** | Answers from supplier submission |
+| **Documents** | Extracted from PDD, etc. |
+| **KML Analysis** | Geospatial assessment |
+| **Abatable Data** | Internal benchmarks |
+| **Manual Input** | Override values |
+
+#### Automatic vs Manual
+
+| Icon | Meaning |
+|------|---------|
+| No indicator | Automatically calculated |
+| Override icon | Manually adjusted |
+
+---
+
+### Using Scores for Decisions
+
+#### Advancement Thresholds
+
+While not rigid, consider:
+- Category scores significantly below 2.5 warrant close review
+- Consistent low scores across categories suggest rejection
+- High scores support advancement
+
+#### Don't Rely on Scores Alone
+
+Always also consider:
+- Manual task findings
+- Document quality
+- Overall impression
+- Context and nuance
+
+#### When Scores Conflict
+
+If automated scores seem wrong:
+1. Review the source data
+2. Check for data quality issues
+3. Consider override if justified
+
+---
+
+### Common Questions
+
+#### Why is a score low when the answer seems good?
+
+- Check scoring logic for that feature
+- Verify the answer was captured correctly
+- Consider if context warrants override
+
+#### Why did the score change between stages?
+
+- New data from later stage
+- Geospatial analysis updated scores
+- Manual override applied
+
+#### How do I see what drove a score?
+
+1. Expand the category
+2. Drill down to feature level
+3. View source data for each feature
+
+---
+
+## Overriding Scores
+
+This section covers when and how to manually override automated scorecard scores, including the override process, documentation requirements, and audit considerations.
+
+---
+
+### When to Override
+
+#### Valid Reasons
+
+| Reason | Example |
+|--------|---------|
+| **Manual review findings** | Negative media check reveals issues |
+| **Data not captured** | Relevant info not in questionnaire |
+| **Context needed** | Automated score misses nuance |
+| **Expert judgment** | Technical assessment required |
+| **Calculation issue** | Automated logic doesn't fit case |
+
+#### When NOT to Override
+
+| Scenario | What to Do Instead |
+|----------|-------------------|
+| Disagree with criteria | Discuss with Abatable |
+| Minor difference | Accept automated score |
+| No clear justification | Don't override |
+| Override all scores | Review methodology fit |
+
+#### Override Decision Framework
+
+```
+Is the automated score clearly wrong?
+    +-- Yes -> Is there documented justification?
+    |       +-- Yes -> Override appropriate
+    |       +-- No -> Document first, then override
+    +-- No -> Is expert judgment needed?
+            +-- Yes -> Override with reasoning
+            +-- No -> Accept automated score
+```
+
+---
+
+### How to Override
+
+#### Step-by-Step
+
+1. **Navigate to the score**
+   - Open proposal detail
+   - Go to Scorecard section
+   - Find the specific score
+
+2. **Enter edit mode**
+   - Click the score value or edit icon
+   - Score becomes editable
+
+3. **Enter new value**
+   - Categories: 0-5
+   - Features: 0-100
+   - System validates the range
+
+4. **Provide reason** (required)
+   - Enter clear explanation
+   - Reference supporting evidence
+
+5. **Save**
+   - Click Save
+   - Override recorded with your details
+
+#### What to Include in Reason
+
+Good reasons include:
+- What the issue is
+- Why automated score is incorrect
+- What evidence supports the new score
+
+**Example:**
+> "Reducing from 4.2 to 2.5. Manual negative media check identified ongoing legal dispute regarding land rights. See news articles from Jan 2025 documenting community objections to project."
+
+---
+
+### Override Levels
+
+#### Where You Can Override
+
+| Level | Scale | Effect |
+|-------|-------|--------|
+| **Sub-feature** | 0-100 | Changes feature and up |
+| **Feature** | 0-100 | Changes group and up |
+| **Group** | 0-100 | Changes category |
+| **Category** | 0-5 | Direct category override |
+
+**Note:** Overriding at a higher level does NOT change lower-level scores. They remain independent.
+
+---
+
+### Documentation Requirements
+
+#### Minimum Documentation
+
+Every override must include:
+- **Reason category** (if applicable)
+- **Explanation** - Why automated score is incorrect
+- **Justification** - What supports the new score
+
+#### Reason Categories
+
+| Category | Use When |
+|----------|----------|
+| **Data quality issue** | Input data incomplete/incorrect |
+| **Methodology limitation** | Auto-calc doesn't fit scenario |
+| **External information** | Manual research findings |
+| **Expert assessment** | Technical judgment needed |
+| **Error correction** | Fixing a mistake |
+
+#### Good vs. Poor Documentation
+
+**Good:**
+> "Overriding from 60 to 85. Automated score based only on questionnaire response. Manual review of PDD confirms strong methodology alignment not captured in standard questions. Developer has CCP-approved methodology with additional safeguards."
+
+**Poor:**
+> "Score should be higher."
+
+---
+
+### Viewing and Reverting Overrides
+
+#### Identifying Overridden Scores
+
+- **Override icon** displayed next to score
+- **Different styling** for manual scores
+
+#### Viewing Override Details
+
+Click on an overridden score to see:
+- Original automated value
+- Current override value
+- Who overrode and when
+- Override reason
+
+#### Override History
+
+If a score has multiple changes:
+- View full history
+- See each change with details
+- Understand score evolution
+
+#### Reverting Overrides
+
+**When to Revert:**
+- Override was incorrect
+- New data changes assessment
+- Override no longer valid
+
+**How to Revert:**
+1. Navigate to overridden score
+2. Click **'Revert'** or **'Restore Original'**
+3. Confirm reversion
+4. Automated score restored
+
+---
+
+### Common Override Scenarios
+
+#### Scenario 1: Negative Media Finding
+
+**Situation:** Automated score is 75, but media check found concerns.
+
+**Override to:** 40
+
+**Reason:** "Reducing due to negative media findings. Multiple news sources report community land disputes. Evidence documented in notes."
+
+#### Scenario 2: Document Quality Issue
+
+**Situation:** PDD review reveals incomplete documentation not captured by automated scoring.
+
+**Override to:** Lower value
+
+**Reason:** "PDD missing key baseline methodology section. Document quality below standard required."
+
+#### Scenario 3: Team Assessment
+
+**Situation:** Automated team score based only on questionnaire; manual review reveals strong track record.
+
+**Override to:** Higher value
+
+**Reason:** "Increasing based on manual team assessment. Developer has successfully delivered 3 similar projects not captured in standard questions."
+
+---
+
+### Best Practices
+
+#### Be Specific
+
+Good: "Reducing from 80 to 50 because..."
+
+Bad: "Score should be lower"
+
+#### Reference Evidence
+
+- Cite specific findings
+- Reference documents or notes
+- Provide verifiable information
+
+#### Be Consistent
+
+- Similar situations should have similar overrides
+- Discuss edge cases with team
+- Document patterns for calibration
+
+#### Document Thoroughly
+
+- Assume someone else will review
+- Explain the "why"
+- Make it auditable
+
+---
+
+### Audit Trail
+
+#### What's Recorded
+
+Every override logs:
+- Original value
+- New value
+- Reason provided
+- User who overrode
+- Timestamp
+
+#### Viewing History
+
+All override history is visible:
+- On the score itself
+- In proposal history
+- For audit purposes
+
+---
+
+## Related Guides
+
+- [Symbiosis RFP Stages](/symbiosis/rfp-stages) - Using scores in decisions
+- [Managing Submissions](/symbiosis/managing-submissions) - Stage decisions

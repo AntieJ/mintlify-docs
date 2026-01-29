@@ -1,0 +1,214 @@
+---
+title: "Geospatial"
+description: "Screening Phase 2 focusing on geospatial analysis review and KML boundary evaluation"
+icon: "globe"
+---
+
+# Geospatial
+
+> **Last Updated:** January 2026
+>
+> **Audience:** Symbiosis Staff
+>
+> **Reviewer:**
+
+---
+
+## Overview
+
+This guide covers Screening Phase 2 (Stage 3), which focuses on geospatial analysis review. At this stage, the KML boundary analysis is evaluated in detail.
+
+---
+
+## Stage 3: Screening Phase 2
+
+### Purpose
+
+Detailed geospatial analysis to assess:
+- Land suitability and eligibility
+- Environmental risk factors
+- Boundary validity
+- Compliance with location requirements
+
+### Workflow
+
+```
+Proposal passes Screening Phase 1
+    |
+Automated geospatial analysis (from KML)
+    |
+Manual geospatial review
+    |
+Score updates based on analysis
+    |
+Decision: Advance or Reject
+```
+
+---
+
+## Geospatial Analysis Results
+
+### What's Analysed
+
+The geospatial analysis generates 100+ metrics using the supplier's KML file. Key areas include:
+
+| Analysis Area | Key Features | Data Source |
+|---------------|--------------|-------------|
+| **Area for Planting** | Suitable land cover %, Eligible land area | Google Dynamic World, ESA WorldCover |
+| **Protected Areas** | Overlap %, Regulatory risk | WDPA |
+| **Forest Cover** | Forest/Non-forest area, Total forest loss | PALSAR-2 FNF dataset |
+| **Biome** | Biome diversity, Dominant biome | RESOLVE Ecoregions 2017 |
+| **Terrain** | Average slope, Terrain roughness | ALOS Digital Surface Model |
+| **Deforestation Risk** | Stability %, Avg annual rate, Loss drivers | WRI/Google DeepMind Global |
+| **Fire Risk** | Burned area %, Avg monthly burn | MODIS Burned Area |
+| **Drought Risk** | Recent average SPEI, Drought frequency | SPEI Index |
+| **Climate Impact (ARR)** | Median climate impact, Variability | Hastler et al. 2024 |
+| **Regeneration (ARR)** | High PNR coverage, Average PNR | Williams 2024 PNR |
+| **Cost-Effectiveness** | Cost per hectare, Implementation costs | Busch et al. 2024 |
+| **Growth Potential** | Annual average GPP | MODIS MOD17A2H |
+| **Biodiversity** | Water stress, Biodiversity intactness | WRI Aqueduct, Hudson 2017 |
+
+### Viewing Results
+
+1. Open proposal at Screening Phase 2
+2. Navigate to **Geospatial Analysis** section
+3. View:
+   - Summary scores
+   - Map visualization
+   - Layer-by-layer results
+
+### Map View
+
+The map view shows:
+- Project boundary (from KML)
+- Overlays of analysis layers
+- Risk indicators
+- Toggle layers on/off
+
+---
+
+## Interpreting Results
+
+### Key Metrics to Review
+
+| Category | Metric | Low Risk | High Risk |
+|----------|--------|----------|-----------|
+| **Land Suitability** | Suitable land cover % | &gt;50% | &lt;20% |
+| **Protected Areas** | Protected area overlap % | &lt;5% | &gt;15% |
+| **Forest** | Avg annual deforestation rate | &lt;0.5% | &gt;1.5% |
+| **Fire** | Burned area % (5yr) | &lt;1% | &gt;5% |
+| **Drought** | Drought frequency | &lt;15% | &gt;30% |
+| **Climate Impact** | Median climate impact | &gt;200 tCO2e/ha | &lt;100 tCO2e/ha |
+| **Regeneration** | High PNR coverage | &gt;30% | &lt;10% |
+| **Terrain** | Average slope | &lt;15 degrees | &gt;30 degrees |
+
+### Risk Indicators
+
+| Indicator | Low | Medium | High |
+|-----------|-----|--------|------|
+| **Fire Risk** | &lt;1% burned area | 1-3% burned | &gt;3% burned |
+| **Deforestation Pressure** | &lt;3% regional loss | 3-6% loss | &gt;6% regional loss |
+| **Drought Risk** | SPEI &gt;0.5 | SPEI 0 to -1 | SPEI &lt;-1 |
+
+### Boundary Issues
+
+| Issue | Impact |
+|-------|--------|
+| **Invalid geometry** | Cannot proceed; request correction |
+| **Multiple polygons** | May need clarification |
+| **Boundary overlap** | With protected areas, etc. |
+| **Area mismatch** | Stated vs calculated area |
+
+### Compliance Checks
+
+| Check | Pass | Fail |
+|-------|------|------|
+| **Protected Area Overlap** | No overlap or acceptable | Significant overlap |
+| **Land Eligibility** | Suitable for project type | Not suitable |
+| **Location Accuracy** | Matches project description | Discrepancy |
+
+---
+
+## Geospatial
+
+### When Manual Review is Needed
+
+- Automated results need verification
+- Borderline cases
+- Complex boundary situations
+- Risk interpretation required
+
+### Manual Review Process
+
+Conducted by Peter Wooldridge:
+
+1. Cross-reference with imagery
+2. Verify boundary accuracy
+3. Interpret risk assessments
+4. Recommend score adjustments
+
+### Flagging for Manual Review
+
+If you identify issues:
+1. Add note on proposal
+2. Flag in `#due_diligence` channel
+3. Request manual geospatial review
+
+---
+
+## Score Updates
+
+### Geospatial Impact on Scores
+
+Geospatial analysis affects scorecard:
+- Delivery Risk (location risks)
+- Project Quality (environmental factors)
+
+### Reviewing Updated Scores
+
+After geospatial analysis:
+1. View updated scorecard
+2. Compare to Phase 1 scores
+3. Identify changes
+
+### Overriding Based on Geo Results
+
+If manual review warrants adjustment:
+1. Override relevant scores
+2. Document geospatial findings as reason
+3. Reference specific analysis results
+
+---
+
+## Making Decisions
+
+### Advancing
+
+When geospatial analysis supports advancement:
+1. Confirm all analysis complete
+2. Review any manual review findings
+3. Click **'Advance to Intermediate DD'**
+4. Supplier notified
+
+### Rejecting
+
+When geospatial issues are disqualifying:
+1. Click **'Reject Proposal'**
+2. Select reason related to geospatial issues
+3. Provide specific findings
+4. Reference analysis results
+
+### Common Rejection Reasons
+
+- Significant protected area overlap
+- Land not suitable for carbon project
+- High risk scores indicating project viability concerns
+- Boundary discrepancies
+
+---
+
+## Related Guides
+
+- [Symbiosis RFP Stages](/symbiosis/rfp-stages) - Previous stage
+- [Scorecard](/symbiosis/scorecard) - Score interpretation and adjustments
+- [Managing Submissions](/symbiosis/managing-submissions) - Stage decisions
