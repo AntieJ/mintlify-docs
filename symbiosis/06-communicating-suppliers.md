@@ -1,16 +1,12 @@
 ---
-title: "Communicating with Suppliers"
-description: "How to communicate with suppliers through the platform, request information, and provide feedback"
-icon: "comment"
+order: -6
+icon: comment
 ---
+# Communicating with Suppliers (TBD)
 
-# Communicating with Suppliers
-
-> **Last Updated:** January 2026
->
-> **Audience:** Symbiosis Staff
->
-> **Reviewer:**
+<!--
+Owner:
+-->
 
 ---
 
@@ -24,6 +20,7 @@ This guide covers how to communicate with suppliers through the platform, includ
 
 ### Available Methods
 
+{.compact}
 | Method | Use Case |
 |--------|----------|
 | **Information Request** | Request specific data/documents |
@@ -158,6 +155,6 @@ Suppliers automatically receive:
 
 ## Related Guides
 
-- [Viewing Submissions](/symbiosis/viewing-submissions) - Review proposals
-- [Symbiosis RFP Stages](/symbiosis/rfp-stages) - Stage 1 decisions
-- [Managing Submissions](/symbiosis/managing-submissions) - Advancing and rejecting
+- [Viewing Submissions](02-viewing-submissions.md) - Review proposals
+- [Symbiosis RFP](01-symbiosis-rfp.md) - Stage 1 decisions
+- [Managing Submissions](03-managing-submissions.md) - Advancing and rejecting

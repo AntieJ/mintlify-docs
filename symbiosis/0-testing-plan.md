@@ -1,0 +1,221 @@
+---
+order: 0
+icon: checklist
+---
+# Testing Plan - 27th Feb
+
+<!--
+Owner: AntonJ
+-->
+
+---
+
+## Overview
+
+This testing plan provides a structured approach for validating key platform features before production release. Use this plan to walk through critical user journeys and verify expected behaviour. Dive deeper into the platform features by clicking on the relevant guide.
+
+### Testing Plan
+
+1. Work through each scenario in order within each section
+2. Use the following document to report any issues or add feedback: *Abatable to share spreadsheet*
+    Please include:
+    - Scenario name and step number
+    - Expected behaviour vs actual behaviour
+    - Screenshots (if applicable)
+    - Browser and device information
+3. Abatable will review and respond to each issue
+
+---
+
+## Scenarios
+
+### Supplier Journey
+
+{.compact}
+| # | Scenario | Description |
+|---|----------|-------------|
+| 1 | [Responding to Stage 1: Pre-Screening (Pass)](#1-responding-to-stage-1-pre-screening-pass) | Complete questionnaire and advance |
+| 2 | [Responding to Stage 1: Pre-Screening (Fail)](#2-responding-to-stage-1-pre-screening-fail) | Rejection flow and appeal |
+| 3 | [Responding to Stage 1: Pre-Screening (Geo visualisation)](#3-responding-to-pre-screening-geo-visualisation) | KML upload and map verification |
+| 4 | [Responding to Stage 2: Screening](#4-responding-to-screening-stage) | Stage 2 questionnaire including document upload |
+
+### Symbiosis Staff
+
+{.compact}
+| # | Scenario | Description |
+|---|----------|-------------|
+| 1 | [Viewing the Procurement](#1-viewing-the-procurement-submissions) | Dashboard, pipeline, and exports |
+| 2 | [Viewing a Proposal](#2-viewing-a-proposal) | Search, filter, translations |
+| 3 | [Making a Note](#3-making-a-note) | Notes and audit history |
+| 4 | [Approving/Rejecting a Proposal](#4-approvingrejecting-a-proposal) | Stage decisions and portfolio |
+| 5 | [Viewing and Overriding Scorecard](#5-viewing-and-overriding-scorecard) | Scores, geospatial, and overrides |
+
+---
+
+## Feature rollout
+
+{.compact}
+| Ready for testing - 27th Feb | Ready for RFP Launch - 26th March | After RFP Launch - TBD |
+|-------------------|----------------------|------------------|
+| Supplier: Stage 1: Pre-screening Questionnaire | Supplier Requests | Stage: Member Opt-in Workflow |
+| Supplier: Stage 2: Screening Questionnaire | Appeals process | Stage: Third party DD |
+| Viewing Submissions | Multilingual| |
+| Managing Submissions | Supplier Access & Onboarding | |
+| Scorecard | Google Drive Sync | |
+| Making Notes |  | |
+| Running Geospatial analysis |  | |
+
+
+---
+
+## Platform Access
+
+Access the platform at: `https://app.abatable.com/`
+
+---
+
+# Scenario steps
+
+## Supplier Journey
+
+### 1. Responding to Stage 1: Pre-Screening (Pass)
+
+{.compact}
+| Action | Expected Outcome |
+|--------|------------------|
+| Navigate to active RFP | Pre-screening questionnaire displays |
+| Complete all required fields with valid data | Form accepts input |
+| Submit pre-screening responses | Submission confirmed |
+| Verify status update | Status shows "Passed" or advances to next stage |
+
+**Related Guide:** [Screening Submission](Supplier/05-screening-submission.md)
+
+---
+
+### 2. Responding to Stage 1: Pre-Screening (Fail)
+
+{.compact}
+| Action | Expected Outcome |
+|--------|------------------|
+| Navigate to active RFP | Pre-screening questionnaire displays |
+| Enter data that triggers rejection criteria | Form accepts input |
+| Submit pre-screening responses | Submission confirmed |
+| Verify rejection notification | Status shows "Rejected" with reason displayed |
+| Confirm appeal option is visible | Appeal button or link available |
+
+**Related Guide:** [Screening Submission](Supplier/05-screening-submission.md)
+
+---
+
+### 3. Responding to Pre-Screening (Geo visualisation)
+
+{.compact}
+| Action | Expected Outcome |
+|--------|------------------|
+| Navigate to active RFP | Pre-screening questionnaire displays |
+| Complete details and navigate to geospatial question section | KML upload field visible |
+| Upload KML file with project boundaries | File uploads successfully |
+| Verify map preview displays | Project boundaries render on map |
+| Check layer information | Geospatial layers visible |
+| Submit pre-screening responses | Submission confirmed with geo data |
+
+**Related Guide:** [Screening Submission](Supplier/05-screening-submission.md)
+
+---
+
+### 4. Responding to Screening Stage
+
+{.compact}
+| Action | Expected Outcome |
+|--------|------------------|
+| Access screening questionnaire | Full questionnaire displays |
+| Verify questions display in selected language | All question text translated |
+| Complete all required sections | Progress indicator updates |
+| Upload required documents | Files upload successfully |
+| Save draft progress | Draft saved without errors |
+| Submit final screening response | Confirmation message displayed |
+
+**Related Guide:** [Screening Submission](Supplier/05-screening-submission.md)
+
+---
+
+## Symbiosis Staff Journeys
+
+### 1. Viewing the Procurement submissions
+
+{.compact}
+| Action | Expected Outcome |
+|--------|------------------|
+| Log in as Symbiosis staff | Homepage visible |
+| Navigate to **Procurements** | Procurement list visible |
+| Select the Symbiosis RFP | Procurement summary displays |
+| Expand Submitted proposals -> Click View | Summary page displays |
+| Check filter options | Filters work as expected |
+| Export pipeline data to CSV | CSV file downloads successfully |
+
+**Related Guide:** [Viewing Submissions](02-viewing-submissions.md)
+
+---
+
+### 2. Viewing a Proposal
+
+{.compact}
+| Action | Expected Outcome |
+|--------|------------------|
+| Navigate to **Proposals** | Proposal list displays |
+| Use search or filter to find proposal | Results update correctly |
+| Click to open proposal | Proposal detail page loads |
+| Review submission content | All sections accessible |
+
+**Related Guide:** [Viewing Submissions](02-viewing-submissions.md)
+
+---
+
+### 3. Making a Note
+
+{.compact}
+| Action | Expected Outcome |
+|--------|------------------|
+| Open a proposal | Proposal detail page displays |
+| Navigate to notes section | Notes area visible |
+| Click **'Add Note'** | Note input field appears |
+| Enter note content | Text accepted |
+| Click Add Note | Note saved and displays with timestamp |
+| Verify note persists | Note visible on page refresh |
+| Check audit history | Note creation logged with timestamp |
+
+**Related Guide:** [Managing Submissions](03-managing-submissions.md)
+
+---
+
+### 4. Approving/Rejecting a Proposal
+
+{.compact}
+| Action | Expected Outcome |
+|--------|------------------|
+| Open proposal requiring decision | Proposal detail displays |
+| Click Manage | All information accessible |
+| Select **'Accept and advance to next stage'** or **'Reject and disqualify'** | Decision dialog appears |
+| Click 'Accept and Advance' or 'Reject' | Stage progression updates |
+| Verify proposal status change | New status reflected in list |
+
+**Related Guide:** [Managing Submissions](03-managing-submissions.md)
+
+---
+
+### 5. Viewing and Overriding Scorecard
+
+{.compact}
+| Action | Expected Outcome |
+|--------|------------------|
+| Open proposal with scorecard | Proposal loads |
+| Click 1. Pre-screening tab | Scorecard section visible |
+| Review automated scores | All categories display |
+| Check scorecard flags | Risk flags visible where applicable |
+| Press Edit score button | Button accessible |
+| Enter manual score | New score accepted |
+| Add reason for override | Justification saved |
+| Click Save | Override reflected in scorecard |
+
+**Related Guides:**
+- [Scorecard](05-scorecard.md)

@@ -1,16 +1,12 @@
 ---
-title: "Managing Submissions"
-description: "How to make stage decisions for proposals, including advancing and rejecting"
-icon: "tasks"
+order: -3
+icon: tasklist
 ---
+# Managing Submissions (TBD)
 
-# Managing Submissions
-
-> **Last Updated:** January 2026
->
-> **Audience:** Symbiosis Staff
->
-> **Reviewer:**
+<!--
+Owner:
+-->
 
 ---
 
@@ -34,6 +30,7 @@ This guide covers how to make stage decisions for proposals, including advancing
 
 ### Symbiosis Stage Workflow
 
+{.compact}
 | Stage | Name | Advancement | Notes |
 |-------|------|-------------|-------|
 | 1 | Eligibility Check | Auto on submit | Pass/fail based on criteria |
@@ -52,6 +49,7 @@ Each proposal displays:
 
 ### Stage Status Types
 
+{.compact}
 | Status | Description |
 |--------|-------------|
 | **Pending** | Awaiting supplier submission |
@@ -107,6 +105,7 @@ All stage transitions are logged with:
 2. Click **'Reject Proposal'**
 3. Complete mandatory rejection fields:
 
+{.compact}
 | Field | Required | Description |
 |-------|----------|-------------|
 | **Reason Category** | Yes | Select from dropdown |
@@ -117,6 +116,7 @@ All stage transitions are logged with:
 
 ### Rejection at Different Stages
 
+{.compact}
 | Stage | Rejection Implications |
 |-------|----------------------|
 | Eligibility Check | Automatic based on criteria; appeal available |
@@ -130,16 +130,6 @@ Suppliers receive notification of rejection:
 - Feedback if provided
 - Appeal option (if available)
 
-### Good Rejection Feedback
-
-**Include:**
-- Specific criteria that weren't met
-- Reference to scorecard scores
-- Actionable information for future
-
-**Example:**
-> "Proposal rejected due to scorecard scores below threshold in Delivery Risk (1.8/5) and Methodology Eligibility (2.1/5). The project's methodology version (v2.0) is not currently approved. Developer track record could not be verified."
-
 ---
 
 ## Bulk Actions
@@ -152,6 +142,7 @@ Suppliers receive notification of rejection:
 
 ### Available Bulk Actions
 
+{.compact}
 | Action | Description |
 |--------|-------------|
 | **Advance Stage** | Move all selected to next stage |
@@ -174,6 +165,7 @@ Suppliers receive notification of rejection:
 
 In some cases, proposals may need to move backward:
 
+{.compact}
 | Scenario | Action |
 |----------|--------|
 | **Appeal Overturned** | Returns to previous stage |
@@ -182,6 +174,7 @@ In some cases, proposals may need to move backward:
 
 ### Movement Restrictions
 
+{.compact}
 | User Type | Can Advance | Can Reject | Can Move Backward |
 |-----------|-------------|------------|-------------------|
 | Abatable Admin | Yes | Yes | Yes |
@@ -195,6 +188,7 @@ In some cases, proposals may need to move backward:
 
 ### Stage Change Notifications
 
+{.compact}
 | Event | Who's Notified |
 |-------|----------------|
 | Proposal Submitted | Buyer team |
@@ -224,6 +218,7 @@ In some cases, proposals may need to move backward:
 
 ## Troubleshooting
 
+{.compact}
 | Issue | Solution |
 |-------|----------|
 | Cannot advance proposal | Check all prerequisites are met |
@@ -269,6 +264,7 @@ Shortlists are custom saved views of the proposals table. They allow you to:
 
 #### Managing Shortlists
 
+{.compact}
 | Action | How To |
 |--------|--------|
 | **View shortlist** | Click shortlist name in sidebar |
@@ -279,6 +275,7 @@ Shortlists are custom saved views of the proposals table. They allow you to:
 
 #### Shortlist Properties
 
+{.compact}
 | Property | Description |
 |----------|-------------|
 | **Name** | Custom name for the shortlist |
@@ -322,6 +319,7 @@ Notes are internal comments attached to proposals. They allow:
 
 #### Note Features
 
+{.compact}
 | Feature | Description |
 |---------|-------------|
 | **Rich Text** | Formatting, bullet points, links |
@@ -389,6 +387,7 @@ Notes are **not visible** to:
 
 #### Using Notes Effectively
 
+{.compact}
 | Note Type | Example Content |
 |-----------|-----------------|
 | **Initial Review** | "Good project fundamentals, scorecard shows strong methodology compliance" |
@@ -420,6 +419,7 @@ Notes are **not visible** to:
 
 ### Shortlist & Notes Permissions
 
+{.compact}
 | Feature | Abatable Admin | Symbiosis Staff | Symbiosis Members | DD Vendors |
 |---------|---------------|-----------------|-------------------|------------|
 | Create shortlists | Yes | Yes | Yes | No |
@@ -432,7 +432,7 @@ Notes are **not visible** to:
 
 ## Related Guides
 
-- [Viewing Submissions](/symbiosis/viewing-submissions) - Viewing and filtering proposals
-- [Symbiosis RFP Stages](/symbiosis/rfp-stages) - Stage 1 & 2 decisions
-- [Scorecard](/symbiosis/scorecard) - Scores for stage decisions
-- [Managing Appeals](/symbiosis/managing-appeals) - Handling supplier appeals
+- [Viewing Submissions](02-viewing-submissions.md) - Viewing and filtering proposals
+- [Symbiosis RFP](01-symbiosis-rfp.md) - Stage 1 & 2 decisions
+- [Scorecard](05-scorecard.md) - Scores for stage decisions
+- [Managing Appeals](07-managing-appeals.md) - Handling supplier appeals

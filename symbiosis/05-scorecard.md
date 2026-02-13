@@ -1,16 +1,12 @@
 ---
-title: "Scorecard"
-description: "Understanding and overriding scorecard scores for project evaluation"
-icon: "gauge"
+order: -5
+icon: meter
 ---
+# Scorecard (TBD)
 
-# Scorecard
-
-> **Last Updated:** January 2026
->
-> **Audience:** Symbiosis Staff
->
-> **Reviewer:**
+<!--
+Owner:
+-->
 
 ---
 
@@ -26,6 +22,7 @@ This section explains how to interpret scorecard scores and understand what they
 
 Each proposal is scored across four main categories:
 
+{.compact}
 | Category | What It Measures |
 |----------|------------------|
 | **Delivery Risk** | Likelihood project will deliver credits |
@@ -37,6 +34,7 @@ Each proposal is scored across four main categories:
 
 Categories are scored 0-5:
 
+{.compact}
 | Score | Rating | Meaning |
 |-------|--------|---------|
 | 4.5 - 5.0 | Excellent | Exceeds expectations |
@@ -96,6 +94,7 @@ Delivery Risk (3.8/5)
 
 **What it measures:** Will this project actually deliver credits?
 
+{.compact}
 | Factor | Considerations |
 |--------|---------------|
 | Developer track record | Previous project delivery |
@@ -117,6 +116,7 @@ Delivery Risk (3.8/5)
 
 **What it measures:** Does the project comply with methodology requirements?
 
+{.compact}
 | Factor | Considerations |
 |--------|---------------|
 | Methodology approval | Using approved methodology (VM0047, Isometric, Equitable Earth) |
@@ -139,6 +139,7 @@ Delivery Risk (3.8/5)
 
 This category heavily relies on geospatial analysis:
 
+{.compact}
 | Factor | Key Features |
 |--------|--------------|
 | **Land Suitability** | Suitable land cover %, Protected area overlap |
@@ -155,9 +156,10 @@ This category heavily relies on geospatial analysis:
 
 **What it measures:** Is the pricing and commercial offering acceptable?
 
+{.compact}
 | Factor | Considerations |
 |--------|---------------|
-| Price per tonne | vs budget/market (threshold: &lt; USD 100/tonne) |
+| Price per tonne | vs budget/market (threshold: < USD 100/tonne) |
 | Volume offered | Meets requirements |
 | Terms | Payment and delivery terms |
 | Value alignment | Price-quality relationship |
@@ -178,6 +180,7 @@ Additionally, scores may be flagged if:
 
 #### Where Scores Come From
 
+{.compact}
 | Source | Description |
 |--------|-------------|
 | **Questionnaire** | Answers from supplier submission |
@@ -188,6 +191,7 @@ Additionally, scores may be flagged if:
 
 #### Automatic vs Manual
 
+{.compact}
 | Icon | Meaning |
 |------|---------|
 | No indicator | Automatically calculated |
@@ -253,6 +257,7 @@ This section covers when and how to manually override automated scorecard scores
 
 #### Valid Reasons
 
+{.compact}
 | Reason | Example |
 |--------|---------|
 | **Manual review findings** | Negative media check reveals issues |
@@ -263,6 +268,7 @@ This section covers when and how to manually override automated scorecard scores
 
 #### When NOT to Override
 
+{.compact}
 | Scenario | What to Do Instead |
 |----------|-------------------|
 | Disagree with criteria | Discuss with Abatable |
@@ -326,6 +332,7 @@ Good reasons include:
 
 #### Where You Can Override
 
+{.compact}
 | Level | Scale | Effect |
 |-------|-------|--------|
 | **Sub-feature** | 0-100 | Changes feature and up |
@@ -348,6 +355,7 @@ Every override must include:
 
 #### Reason Categories
 
+{.compact}
 | Category | Use When |
 |----------|----------|
 | **Data quality issue** | Input data incomplete/incorrect |
@@ -481,5 +489,5 @@ All override history is visible:
 
 ## Related Guides
 
-- [Symbiosis RFP Stages](/symbiosis/rfp-stages) - Using scores in decisions
-- [Managing Submissions](/symbiosis/managing-submissions) - Stage decisions
+- [Symbiosis RFP](01-symbiosis-rfp.md) - Using scores in decisions
+- [Managing Submissions](03-managing-submissions.md) - Stage decisions

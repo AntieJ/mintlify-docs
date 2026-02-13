@@ -1,16 +1,12 @@
 ---
-title: "Managing Appeals"
-description: "How to manage supplier appeals, review decisions, and document outcomes"
-icon: "gavel"
+order: -7
+icon: law
 ---
+# Managing Appeals (TBD)
 
-# Managing Appeals
-
-> **Last Updated:** January 2026
->
-> **Audience:** Symbiosis Staff
->
-> **Reviewer:**
+<!--
+Owner:
+-->
 
 ---
 
@@ -54,6 +50,7 @@ Upheld (remains rejected) OR Overturned (returns to review)
 
 ### Appeal Outcomes
 
+{.compact}
 | Decision | Result |
 |----------|--------|
 | **Uphold** | Rejection stands, supplier notified, proposal remains rejected |
@@ -65,6 +62,7 @@ Upheld (remains rejected) OR Overturned (returns to review)
 
 ### Stages with Appeal Option
 
+{.compact}
 | Stage | Appeal Available |
 |-------|------------------|
 | Eligibility Check | Yes |
@@ -99,6 +97,7 @@ Appeals are indicated by:
 
 ### Appeal Status Types
 
+{.compact}
 | Status | Description |
 |--------|-------------|
 | **Appeal Pending** | Supplier has submitted, awaiting review |
@@ -116,6 +115,7 @@ Appeals are indicated by:
 2. Open the **Appeal** section
 3. Review the following:
 
+{.compact}
 | Item | What to Check |
 |------|---------------|
 | **Original Rejection** | Why was the proposal rejected? |
@@ -148,6 +148,7 @@ For screening stage appeals:
 
 ### Decision Requirements
 
+{.compact}
 | Field | Required | Description |
 |-------|----------|-------------|
 | **Decision** | Yes | Uphold or Overturn |
@@ -179,6 +180,7 @@ Choose **Overturn** when:
 
 ### What Happens After
 
+{.compact}
 | Decision | What Happens |
 |----------|--------------|
 | **Upheld** | Proposal remains rejected, supplier notified |
@@ -205,6 +207,7 @@ This creates an audit trail for:
 
 ### Who Gets Notified
 
+{.compact}
 | Event | Who's Notified |
 |-------|----------------|
 | Appeal Submitted | Buyer team |
@@ -294,6 +297,7 @@ Suppliers receive:
 
 ## Troubleshooting
 
+{.compact}
 | Issue | Solution |
 |-------|----------|
 | Appeal not visible | Verify proposal was properly rejected |
@@ -305,6 +309,6 @@ Suppliers receive:
 
 ## Related Guides
 
-- [Managing Submissions](/symbiosis/managing-submissions) - Stage decisions and rejections
-- [Symbiosis RFP Stages](/symbiosis/rfp-stages) - Eligibility appeals
-- [Communicating with Suppliers](/symbiosis/communicating-suppliers) - Appeal communications
+- [Managing Submissions](03-managing-submissions.md) - Stage decisions and rejections
+- [Symbiosis RFP](01-symbiosis-rfp.md) - Eligibility appeals
+- [Communicating with Suppliers](06-communicating-suppliers.md) - Appeal communications
