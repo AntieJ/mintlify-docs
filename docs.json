@@ -73,14 +73,14 @@
           {
             "group": "Symbiosis RFP",
             "pages": [
-              "symbiosis/testing-plan",
-              "symbiosis/viewing-submissions",
-              "symbiosis/managing-submissions",
-              "symbiosis/rfp-stages",
-              "symbiosis/geospatial",
-              "symbiosis/scorecard",
-              "symbiosis/communicating-suppliers",
-              "symbiosis/managing-appeals"
+              "symbiosis/0-testing-plan",
+              "symbiosis/01-symbiosis-rfp",
+              "symbiosis/02-viewing-submissions",
+              "symbiosis/03-managing-submissions",
+              "symbiosis/04-geospatial",
+              "symbiosis/05-scorecard",
+              "symbiosis/06-communicating-suppliers",
+              "symbiosis/07-managing-appeals"
             ]
           }
         ]
