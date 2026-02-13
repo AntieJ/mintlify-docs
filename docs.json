@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Symbiosis",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -9,97 +9,33 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+        "group": "Getting Started",
+        "pages": [
+          "index",
+          "symbiosis/testing-plan",
+          "symbiosis/symbiosis-rfp"
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "group": "Buyer Workflows",
+        "pages": [
+          "symbiosis/viewing-submissions",
+          "symbiosis/managing-submissions",
+          "symbiosis/geospatial",
+          "symbiosis/scorecard",
+          "symbiosis/communicating-suppliers",
+          "symbiosis/managing-appeals"
         ]
       },
       {
-        "tab": "Symbiosis",
-        "groups": [
-          {
-            "group": "Symbiosis RFP",
-            "pages": [
-              "symbiosis/0-testing-plan",
-              "symbiosis/01-symbiosis-rfp",
-              "symbiosis/02-viewing-submissions",
-              "symbiosis/03-managing-submissions",
-              "symbiosis/04-geospatial",
-              "symbiosis/05-scorecard",
-              "symbiosis/06-communicating-suppliers",
-              "symbiosis/07-managing-appeals"
-            ]
-          }
+        "group": "Supplier Workflows",
+        "pages": [
+          "symbiosis/supplier/screening-submission"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -109,32 +45,51 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@abatable.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.abatable.com/"
     }
   },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+  "redirects": [
+    {
+      "source": "/symbiosis/0-testing-plan",
+      "destination": "/symbiosis/testing-plan"
+    },
+    {
+      "source": "/symbiosis/01-symbiosis-rfp",
+      "destination": "/symbiosis/symbiosis-rfp"
+    },
+    {
+      "source": "/symbiosis/02-viewing-submissions",
+      "destination": "/symbiosis/viewing-submissions"
+    },
+    {
+      "source": "/symbiosis/03-managing-submissions",
+      "destination": "/symbiosis/managing-submissions"
+    },
+    {
+      "source": "/symbiosis/04-geospatial",
+      "destination": "/symbiosis/geospatial"
+    },
+    {
+      "source": "/symbiosis/05-scorecard",
+      "destination": "/symbiosis/scorecard"
+    },
+    {
+      "source": "/symbiosis/06-communicating-suppliers",
+      "destination": "/symbiosis/communicating-suppliers"
+    },
+    {
+      "source": "/symbiosis/07-managing-appeals",
+      "destination": "/symbiosis/managing-appeals"
+    },
+    {
+      "source": "/symbiosis/Supplier/05-screening-submission",
+      "destination": "/symbiosis/supplier/screening-submission"
     }
-  }
+  ]
 }
